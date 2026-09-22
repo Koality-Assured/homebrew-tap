@@ -1,26 +1,26 @@
 class Harness < Formula
   desc "Unified Harness CLI Control Plane for domain harnesses and spokes"
   homepage "https://github.com/Koality-Assured/harness-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Koality-Assured/harness-cli/releases/download/v#{version}/harness_#{version}_darwin_arm64.tar.gz"
-      sha256 "f461965f840e3d48157e002c6f540ae7e542b5aac4bc95ddc5ca065141a69592"
+      sha256 "6e1e7d2b51aa9e4f55c6197966944e77e8cadb6e55971dd018850266c95ba899"
     else
       url "https://github.com/Koality-Assured/harness-cli/releases/download/v#{version}/harness_#{version}_darwin_amd64.tar.gz"
-      sha256 "46cc86eb65eaa05b52438fdff732c2c3967a4113fcd517aafc5a8271c552873d"
+      sha256 "93bfb7af59bb316a074a443a28f359780efa9deb1a5b82a60ff78fe3f460ccbe"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Koality-Assured/harness-cli/releases/download/v#{version}/harness_#{version}_linux_arm64.tar.gz"
-      sha256 "0e6cbfdf9bfb5b98483662b325a87634d0ea13dacab072feb6921642cfd156a5"
+      sha256 "947ce2e97eee3cb0a62236b28676e4b96c812fa6186d0f6d7fd3ee73df8ddf85"
     else
       url "https://github.com/Koality-Assured/harness-cli/releases/download/v#{version}/harness_#{version}_linux_amd64.tar.gz"
-      sha256 "8a5affda9ee3fd0c38d8c30a0127aeb48ab41585ca8135bfa3449bd82e9d9d02"
+      sha256 "37c8d31f604be42318325bb6e69d5739815a04385dc3919510b5bfe891559d24"
     end
   end
 
