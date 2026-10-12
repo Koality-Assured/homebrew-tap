@@ -28,9 +28,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/validate_formula.py
 
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-
       - name: Brew Style & Audit
         run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
           brew style Formula/
